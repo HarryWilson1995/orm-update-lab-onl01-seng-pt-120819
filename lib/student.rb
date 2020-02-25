@@ -14,7 +14,7 @@ class Student
     @id = id 
   end 
   
-    def save
+  def save
     sql = <<-SQL
       INSERT INTO students (name, grade) 
       VALUES (?, ?)
